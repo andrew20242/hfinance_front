@@ -1,1 +1,7 @@
-<p>breadcrumb works!</p>
+<div class="breadcrumb-text">
+  <p>hfinance /</p>
+  @for(urlSegment of breadcrumbPath; track urlSegment) {
+  <a [routerLink]="'/' +breadcrumbPath.join('/')">{{urlSegment}}</a>
+  <p>/</p>
+  }
+</div>
