@@ -1,0 +1,12 @@
+.after-bread {
+  display: flex;
+}
+
+app-side-menu {
+  max-width: 216px;
+  width: 100%;
+}
+
+router-outlet>* {
+  width: 100%;
+}
