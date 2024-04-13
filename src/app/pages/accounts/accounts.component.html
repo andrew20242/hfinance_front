@@ -10,7 +10,7 @@
       @for(account of (accounts$ | async); track account) {
         <tr>
           <td>{{account.name}}</td>
-          <td>{{account.type}}</td>
+          <td>{{account.type | uppercase}}</td>
         </tr>
       }
     </tbody>
