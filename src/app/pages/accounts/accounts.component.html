@@ -1,1 +1,7 @@
-<p>accounts works!</p>
+<div>
+  <ul>
+    @for(account of (accounts$ | async); track account) {
+    <li>{{account.name}} - {{account.type}}</li>
+    }
+  </ul>
+</div>
