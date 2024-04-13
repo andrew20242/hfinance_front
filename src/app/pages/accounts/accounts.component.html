@@ -1,7 +1,20 @@
-<div>
+<div class="outer-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(account of (accounts$ | async); track account) {
+        <tr>
+          <td>{{account.name}}</td>
+          <td>{{account.type}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
   <ul>
-    @for(account of (accounts$ | async); track account) {
-    <li>{{account.name}} - {{account.type}}</li>
-    }
   </ul>
 </div>

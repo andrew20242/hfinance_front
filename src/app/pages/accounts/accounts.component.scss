@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  padding: 0 3rem;
+
+  thead {
+    tr {
+      th {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-child(2n) {
+      background-color: #edeaea;
+
+    }
+
+    tr {
+      td {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}
+
+.outer-table {
+  margin-top: 2rem;
+}
