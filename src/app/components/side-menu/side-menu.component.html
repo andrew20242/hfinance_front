@@ -1,5 +1,17 @@
-<div class="side-menu">
-  <h3>MENU:</h3>
-  <a routerLink="/accounts">Accounts</a>
-  <a routerLink="/about">About</a>
+@if(mobile) {
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow.sidebarMenu.getValue()">
+  <div class="sidebar-menu">
+    <h2 class="set-align">MENU:</h2>
+      <ng-icon name="lucideX" color="white" strokeWidth="4" size="1.5rem" (click)="sidebarShow.toggleSidebar()"></ng-icon>
+  </div>
+  <div class="sidebar-content">
+    <a routerLink="/accounts" class="set-sidebar-text">Accounts</a>
+    <a routerLink="/about" class="set-sidebar-text">About</a>
+  </div>
 </div>
+} @else {
+  <div class="sidebar-content">
+    <a routerLink="/accounts" class="set-sidebar-text">Accounts</a>
+    <a routerLink="/about" class="set-sidebar-text">About</a>
+  </div>
+}

@@ -11,3 +11,95 @@
   align-items: center;
   height: 100%;
 }
+
+.sidebar-open {
+  background-color: #080808;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btnsidebar {
+  background-color: black;
+  color: white;
+  border: 1px solid #555555;
+  border-radius: 10px;
+}
+
+.btnsidebar:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+
+.sidebar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.sidebar-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: ease-in-out 300ms transform;
+  width: 300px;
+}
+
+.sidebar-slider.sidebar-slide-in {
+  transform: translateX(0%);
+  transition: ease-in-out 600ms transform;
+}
+
+.sidebar-close {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  margin: 0 1rem;
+  font-size: 21px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100%;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 2rem;
+  }
+}
+
+.set-align {
+  width: 100%;
+  text-align: center;
+}
+
+.set-sidebar-text {
+  padding: 11px;
+}
+
+.set-sidebar-text:hover {
+  background-image: linear-gradient(to right, rgb(150, 218, 250), black);
+  color: black;
+  border-left: 10px solid rgb(3, 172, 250);
+  cursor: pointer;
+}
+
+.div-menu-icon {
+  margin-left: 1rem;
+}
+
+ng-icon {
+  padding-right: 1rem;
+}

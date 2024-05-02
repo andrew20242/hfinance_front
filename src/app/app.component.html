@@ -1,4 +1,9 @@
-<app-breadcrumb />
+<div class="main-top">
+  @if(mobile){
+  <ng-icon name="lucideMenu" size="2rem" (click)="sidebarShow.toggleSidebar()" color="white" strokeWidth="4"></ng-icon>
+  }
+  <app-breadcrumb />
+</div>
 <div class="after-bread">
   <app-side-menu />
   <div class="outer-router">
